@@ -14,12 +14,14 @@
 		<link rel="stylesheet" href="css/fix.css">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/2.0/gist-embed.min.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
-		<div role="navigation" class="navbar navbar-default navbar-static-top">
+		<header role="navigation" class="navbar navbar-default navbar-static-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a href="/" class="navbar-brand">Social Snippet Project</a>
+					<a href="/" class="navbar-brand">Social Snippet Project #beta</a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
@@ -30,26 +32,101 @@
 					</ul>
 				</div>
 			</div>
-		</div><!-- nav -->
-		<div class="jumbotron">
+		</header>
+
+		<section class="jumbotron">
 			<div class="container text-center">
 				<div class="head">
 					<h1>Social Snippet</h1>
 					<p>Share and use snippet libraries for the online judges.</p>
-					<p>
-						<small>(<a href="https://code.google.com/codejam/">Google Code Jam</a>,
+					<p class="text-muted"><small>
+						[ <a href="https://code.google.com/codejam/">Google Code Jam</a>,
 						<a href="http://codeforces.com/">Codeforces</a>,
-						<a href="http://judge.u-aizu.ac.jp/">Aizu Online Judge</a>
-						and etc...)</small>
-					</p>
+						<a href="http://judge.u-aizu.ac.jp/onlinejudge/">Aizu Online Judge</a>
+						and etc... ]
+					</small></p>
 				</div>
 				<div class="social text-center">
-					<a class="btn btn-warning btn-sm" href="https://rubygems.org/gems/social_snippet"><i class="fa fa-flag"></i> Download »</a>
-					<a class="btn btn-primary btn-sm" href="https://sspm.herokuapp.com"><i class="fa fa-search"></i> Find Snippets »</a>
-					<a class="btn btn-danger btn-sm" href="https://github.com/social-snippet/social-snippet"><i class="fa fa-github"></i> View on GitHub »</a>
+					<a class="btn btn-warning btn-xs" href="https://rubygems.org/gems/social_snippet"><i class="fa fa-flag"></i> Get started »</a>
+					<a class="btn btn-primary btn-xs" href="https://sspm.herokuapp.com"><i class="fa fa-search"></i> Find snippets »</a>
+					<a class="btn btn-danger btn-xs" href="https://github.com/social-snippet/social-snippet"><i class="fa fa-github"></i> View on GitHub »</a>
 				</div>
 			</div>
-		</div><!-- tron -->
+		</section><!-- tron -->
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Quick Start for The Busy Person</h2>
+						<pre class="shell"><code>$ gem install social_snippet</code></pre>
+						<p>...then, you should install the editor plugin (e.g. <a href="https://github.com/social-snippet/vim-social-snippet">vim-social-snippet</a>).</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>How it works</h2>
+					</div>
+					<div class="col-sm-12">
+						<ul class="nav nav-tabs" id="how-it-works-nav">
+							<li><a data-show-id="c" href="">C</a></li>
+							<li><a data-show-id="cpp" href="">C++</a></li>
+							<li><a data-show-id="rb" href="">Ruby</a></li>
+						</ul>
+					</div>
+					<div class="how-it-works-body col-sm-12" hidden id="how-it-works-c">
+						<div class="col-sm-5">
+							<h3>Input</h3>
+							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="input.c"></code>
+						</div>
+						<div class="col-sm-2 text-center how-it-works-ssnip">
+							| ssnip &gt;
+						</div>
+						<div class="col-sm-5">
+							<h3>Output</h3>
+							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="output.c"></code>
+						</div>
+					</div>
+					<div class="how-it-works-body col-sm-12" hidden id="how-it-works-cpp">
+						<div class="col-sm-5">
+							<h3>Input</h3>
+							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="input.cpp"></code>
+						</div>
+						<div class="col-sm-2 text-center how-it-works-ssnip">
+							| ssnip &gt;
+						</div>
+						<div class="col-sm-5">
+							<h3>Output</h3>
+							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="output.cpp"></code>
+						</div>
+					</div>
+					<div class="how-it-works-body col-sm-12" hidden id="how-it-works-rb">
+						<div class="col-sm-5">
+							<h3>Input</h3>
+							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="input.rb"></code>
+						</div>
+						<div class="col-sm-2 text-center how-it-works-ssnip">
+							| ssnip &gt;
+						</div>
+						<div class="col-sm-5">
+							<h3>Output</h3>
+							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="output.rb"></code>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-12-lg">
+						<p>The contents are copyrights &copy; 2014-2015</p>
+						<p>The <a href="https://gtihub.com/social-snippet/social-snippet">social-snippet</a> project is under the terms of <a href="https://github.com/social-snippet/social-snippet/blob/master/LICENSE.txt">MIT License</a>.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
