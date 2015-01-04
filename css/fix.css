@@ -9,12 +9,13 @@ body { background: #f9f2f4; }
 .jumbotron { border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 .jumbotron h1 { color: rgba(255, 255, 255, 1); }
 .jumbotron .head { font-family: 'Source Sans Pro', sans-serif; }
-.jumbotron .head { text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px; }
+.jumbotron .head { text-shadow: rgba(0, 0, 0, 0.8) 2px 2px 3px; }
 .jumbotron .btn { border-radius: 0; }
 h2 { color: rgba(0, 61, 93, 1); }
-pre.shell { background: rgba(31, 31, 31, 1); }
-pre.shell { color: rgba(255, 255, 255, 1); }
+.shell { background: rgba(31, 31, 31, 1); }
+.shell { color: rgba(255, 255, 255, 1); }
 .how-it-works-ssnip { font-size: 24px; }
 .how-it-works-ssnip { font-weight: bold; }
 .how-it-works-ssnip { margin: 64px 0px; }
 .how-it-works-ssnip { color: rgba(0, 0, 0, 0.5); }
+.demo-gif { border: 1px solid rgba(0, 0, 0, 0.2); max-width: 546px; max-height: 231px; }

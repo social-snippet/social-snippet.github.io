@@ -25,7 +25,7 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="https://rubygems.org/gems/social_snippet"><i class="fa fa-flag"></i> RubyGems.org</a></li>
+						<li><a href="https://rubygems.org/gems/social_snippet"><i class="glyphicon glyphicon-cloud-download"></i> RubyGems.org</a></li>
 						<li><a href="https://sspm.herokuapp.com"><i class="fa fa-search"></i> Find Snippets</a></li>
 						<li><a href="https://github.com/social-snippet"><i class="fa fa-github"></i> Contribute</a></li>
 						<li><a href="http://social-snippet.tumblr.com"><i class="fa fa-rss"></i> Blog</a></li>
@@ -47,7 +47,7 @@
 					</small></p>
 				</div>
 				<div class="social text-center">
-					<a class="btn btn-warning btn-xs" href="https://rubygems.org/gems/social_snippet"><i class="fa fa-flag"></i> Get started »</a>
+					<a class="btn btn-warning btn-xs" href="https://rubygems.org/gems/social_snippet"><i class="glyphicon glyphicon-cloud-download"></i> Get started »</a>
 					<a class="btn btn-primary btn-xs" href="https://sspm.herokuapp.com"><i class="fa fa-search"></i> Find snippets »</a>
 					<a class="btn btn-danger btn-xs" href="https://github.com/social-snippet/social-snippet"><i class="fa fa-github"></i> View on GitHub »</a>
 				</div>
@@ -57,16 +57,52 @@
 		<section>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
-						<h2>Quick Start for The Busy Person</h2>
+          <div class="col-sm-12">
+						<h2>Quick Start for the busy person</h2>
+          </div>
+					<div class="col-sm-6">
+            <h3>How to install social-snippet</h3>
+            <p>You can install <a href="https://rubygems.org/gems/social_snippet">the <strong>social-snippet</strong> core system</a> by typing the command as follow:</p>
 						<pre class="shell"><code>$ gem install social_snippet</code></pre>
-						<p>...then, you should install the editor plugin (e.g. <a href="https://github.com/social-snippet/vim-social-snippet">vim-social-snippet</a>).</p>
+						<p>...then, you should install the editor plugin (e.g. <a href="https://github.com/social-snippet/vim-social-snippet">social_snippet.vim</a>).</p>
+            <h3>Requirements</h3>
+            <ul>
+              <li><strong><a href="https://www.ruby-lang.org/">Ruby</a></strong> &gt;= 1.9.3</li>
+              <li><strong><a href="http://git-scm.com/">Git</a></strong></li>
+            </ul>
+            <p class="text-muted">(We recommend to use the latest versions of Ruby and Git)</p>
 					</div>
+          <div class="col-sm-6">
+            <h3>Installation Demo</h3>
+            <p><img src="img/ss-install.gif" class="demo-gif"></p>
+          </div>
 				</div>
+        <div class="row"><hr></div>
 				<div class="row">
 					<div class="col-sm-12">
 						<h2>How it works</h2>
 					</div>
+          <div class="col-sm-6">
+            <h3>The Command-line Interface</h3>
+            <p><a href="https://rubygems.org/gems/social_snippet">The social_snippet gem</a> provides the command-line interface to manage and use the snippet libraries. For example, you can search the libraries by running <kbd>$ sspm search {keyword}</kbd> command, and install them by running <kbd>$ sspm install {name}</kbd> command. The <kbd>sspm-install</kbd> command can resolve dependencies between the libraries, so if the system found a missing required library on the installation of some library, it is also installed to the your system automatically.</p>
+            <h3>@snip / @snippet annotation tags</h3>
+            <p>To insert snippet texts, the social-snippet's core system replaces the annotated comment lines with the code specified on the comments.</p>
+          </div>
+          <div class="col-sm-6">
+            <h3>Basic Syntax</h3>
+            <h4>(1) Before insert a snippet</h4>
+            <p><code class="code">// @snip &lt; {repo-name} # {repo-version} : {file-path} &gt;</code></p>
+            <h4>(2) After insert a snippet</h4>
+            <p><code class="code">// @snippet &lt; {repo-name} # {repo-version} : {file-path} &gt;<br>{the snippet source code}</code></p>
+            <h4>Description</h4>
+            <dl>
+              <dt>{repo-name}</dt>
+              <dd>This is the name of repository added in <a href="https://sspm.herokuapp.com">the social-snippet registry system</a>. You can install the repository by running <kbd>$ sspm install {repo-name}</kbd> command.</dd>
+            </dl>
+          </div>
+          <div class="col-sm-12">
+            <h3>Example Code <small>Before and after inserting snippets</small></h3>
+          </div>
 					<div class="col-sm-12">
 						<ul class="nav nav-tabs" id="how-it-works-nav">
 							<li><a data-show-id="c" href="">C</a></li>
@@ -76,46 +112,64 @@
 					</div>
 					<div class="how-it-works-body col-sm-12" hidden id="how-it-works-c">
 						<div class="col-sm-5">
-							<h3>Input</h3>
+							<h4>Input</h4>
 							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="input.c"></code>
 						</div>
 						<div class="col-sm-2 text-center how-it-works-ssnip">
 							| ssnip &gt;
 						</div>
 						<div class="col-sm-5">
-							<h3>Output</h3>
+							<h4>Output</h4>
 							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="output.c"></code>
 						</div>
 					</div>
 					<div class="how-it-works-body col-sm-12" hidden id="how-it-works-cpp">
 						<div class="col-sm-5">
-							<h3>Input</h3>
+							<h4>Input</h4>
 							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="input.cpp"></code>
 						</div>
 						<div class="col-sm-2 text-center how-it-works-ssnip">
 							| ssnip &gt;
 						</div>
 						<div class="col-sm-5">
-							<h3>Output</h3>
+							<h4>Output</h4>
 							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="output.cpp"></code>
 						</div>
 					</div>
 					<div class="how-it-works-body col-sm-12" hidden id="how-it-works-rb">
 						<div class="col-sm-5">
-							<h3>Input</h3>
+							<h4>Input</h4>
 							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="input.rb"></code>
 						</div>
 						<div class="col-sm-2 text-center how-it-works-ssnip">
 							| ssnip &gt;
 						</div>
 						<div class="col-sm-5">
-							<h3>Output</h3>
+							<h4>Output</h4>
 							<code data-gist-id="8aa2a09c324d5694de0e" data-gist-file="output.rb"></code>
 						</div>
 					</div>
+          <div class="col-sm-6">
+            <div>
+            </div>
+            <div class="lead">
+              <h3>Project Goals</h3>
+              <ul>
+                <li>Run on <strong>any operating systems</strong></li>
+                <li>Use with <strong>any programming languages</strong></li>
+                <li>Work with <strong>any editor softwares</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h3>Application Demo <small>(with <strong><a href="https://github.com/social-snippet/vim-social-snippet">social_snippet.vim</a></strong>)</small></h3>
+            <p class="text-center"><img src="img/ss-use.gif" class="demo-gif"></p>
+          </div>
 				</div>
 			</div>
 		</section>
+
+    <div class="container"><hr></div>
 
 		<footer>
 			<div class="container">
