@@ -18,4 +18,5 @@ h2 { color: rgba(0, 61, 93, 1); }
 .how-it-works-ssnip { font-weight: bold; }
 .how-it-works-ssnip { margin: 64px 0px; }
 .how-it-works-ssnip { color: rgba(0, 0, 0, 0.5); }
+.showterm { border: 1px solid rgba(0, 0, 0, 0.2); }
 .demo-gif { border: 1px solid rgba(0, 0, 0, 0.2); max-width: 608px; max-height: 308px; }
