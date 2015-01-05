@@ -57,52 +57,52 @@
 		<section>
 			<div class="container">
 				<div class="row">
-          <div class="col-sm-12">
+					<div class="col-sm-12">
 						<h2>1. Quick Start for the busy person</h2>
-          </div>
+					</div>
 					<div class="col-lg-6">
-            <h3>How to install <strong>social snippet</strong></h3>
-            <p>You can install <a href="https://rubygems.org/gems/social_snippet">the <strong>social-snippet</strong> core system</a> by typing the command as follow:</p>
+						<h3>How to install <strong>social snippet</strong></h3>
+						<p>You can install <a href="https://rubygems.org/gems/social_snippet">the <strong>social-snippet</strong> core system</a> by typing the command as follow:</p>
 						<pre class="shell"><code>$ gem install social_snippet</code></pre>
 						<p>...then, you should install the editor plugin (e.g. <a href="https://github.com/social-snippet/vim-social-snippet">social_snippet.vim</a>).</p>
-            <h3>Requirements</h3>
-            <ul>
-              <li><strong><a href="https://www.ruby-lang.org/">Ruby</a></strong> &gt;= 1.9.3</li>
-              <li><strong><a href="http://git-scm.com/">Git</a></strong></li>
-            </ul>
-            <p class="text-muted">(We recommend to use the latest versions of Ruby and Git)</p>
+						<h3>Requirements</h3>
+						<ul>
+							<li><strong><a href="https://www.ruby-lang.org/">Ruby</a></strong> &gt;= 1.9.3</li>
+							<li><strong><a href="http://git-scm.com/">Git</a></strong></li>
+						</ul>
+						<p class="text-muted">(We recommend to use the latest versions of Ruby and Git)</p>
 					</div>
-          <div class="col-lg-6">
-            <h3>Installation Demo <small>(with <strong><a href="https://github.com/social-snippet/vim-social-snippet">social_snippet.vim</a></strong>)</small></h3>
-            <p><iframe class="showterm" src="//showterm.herokuapp.com/1a9dd5fb81d67325c73c0#fast" width="640" height="350"></iframe></p>
-          </div>
+					<div class="col-lg-6">
+						<h3>Installation Demo <small>(with <strong><a href="https://github.com/social-snippet/vim-social-snippet">social_snippet.vim</a></strong>)</small></h3>
+						<p><iframe class="showterm" src="//showterm.herokuapp.com/1a9dd5fb81d67325c73c0#fast" width="640" height="350"></iframe></p>
+					</div>
 				</div>
-        <div class="row"><hr></div>
+				<div class="row"><hr></div>
 				<div class="row">
 					<div class="col-sm-12">
 						<h2>2. How it works</h2>
 					</div>
-          <div class="col-sm-6">
-            <h3>The Command-line Interface</h3>
-            <p><a href="https://rubygems.org/gems/social_snippet">The social_snippet gem</a> provides the command-line interface to manage and use the snippet libraries. For example, you can search the libraries by running <kbd>$ sspm search {keyword}</kbd> command, and install them by running <kbd>$ sspm install {name}</kbd> command. The <kbd>sspm-install</kbd> command can resolve dependencies between the libraries, so if the system found a missing required library on the installation of some library, it is also installed to the your system automatically.</p>
-            <h3>@snip / @snippet annotation tags</h3>
-            <p>To insert snippet texts, the social-snippet's core system replaces the annotated comment lines with the code specified on the comments.</p>
-          </div>
-          <div class="col-sm-6">
-            <h3>Basic Syntax</h3>
-            <h4>(1) Before insert a snippet</h4>
-            <p><code class="code">// @snip &lt; {repo-name} # {repo-version} : {file-path} &gt;</code></p>
-            <h4>(2) After insert a snippet</h4>
-            <p><code class="code">// @snippet &lt; {repo-name} # {repo-version} : {file-path} &gt;<br>{the snippet source code}</code></p>
-            <h4>Description</h4>
-            <dl>
-              <dt>{repo-name}</dt>
-              <dd>This is the name of repository added in <a href="https://sspm.herokuapp.com">the social-snippet registry system</a>. You can install the repository by running <kbd>$ sspm install {repo-name}</kbd> command.</dd>
-            </dl>
-          </div>
-          <div class="col-sm-12">
-            <h3>Example Code <small>Before and after inserting snippets</small></h3>
-          </div>
+					<div class="col-sm-6">
+						<h3>The Command-line Interface</h3>
+						<p><a href="https://rubygems.org/gems/social_snippet">The social_snippet gem</a> provides the command-line interface to manage and use the snippet libraries. For example, you can search the libraries by running <kbd>$ sspm search {keyword}</kbd> command, and install them by running <kbd>$ sspm install {name}</kbd> command. The <kbd>sspm-install</kbd> command can resolve dependencies between the libraries, so if the system found a missing required library on the installation of some library, it is also installed to the your system automatically.</p>
+						<h3>@snip / @snippet annotation tags</h3>
+						<p>To insert snippet texts, the social-snippet's core system replaces the annotated comment lines with the code specified on the comments.</p>
+					</div>
+					<div class="col-sm-6">
+						<h3>Basic Syntax</h3>
+						<h4>(1) Before insert a snippet</h4>
+						<p><code class="code">// @snip &lt; {repo-name} # {repo-version} : {file-path} &gt;</code></p>
+						<h4>(2) After insert a snippet</h4>
+						<p><code class="code">// @snippet &lt; {repo-name} # {repo-version} : {file-path} &gt;<br>{the snippet source code}</code></p>
+						<h4>Description</h4>
+						<dl>
+							<dt>{repo-name}</dt>
+							<dd>This is the name of repository added in <a href="https://sspm.herokuapp.com">the social-snippet registry system</a>. You can install the repository by running <kbd>$ sspm install {repo-name}</kbd> command.</dd>
+						</dl>
+					</div>
+					<div class="col-sm-12">
+						<h3>Example Code <small>Before and after inserting snippets</small></h3>
+					</div>
 					<div class="col-sm-12">
 						<ul class="nav nav-tabs" id="how-it-works-nav">
 							<li><a data-show-id="c" href="">C</a></li>
@@ -150,38 +150,38 @@
 						</div>
 					</div>
 				</div>
-        <div class="row"><hr></div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>3. Applications and Web Services</h2>
-          </div>
-          <div class="col-sm-6">
-            <dl>
-              <dt><h3>The social-snippet core system</h3></dt>
-              <dd>
-                <p><a href="https://rubygems.org/gems/social_snippet">https://rubygems.org/gems/social_snippet</a></p>
-              </dd>
-              <dt><h3>The social-snippet registry system</h3></dt>
-              <dd>
-                <p><a href="https://sspm.herokuapp.com">https://sspm.herokuapp.com</a></p>
-              </dd>
-              <dt><h3>social_snippet.vim</h3></dt>
-              <dd>
-                <p><a href="https://github.com/social-snippet/vim-social-snippet">https://github.com/social-snippet/vim-social-snippet</a></p>
-              </dd>
-            </dl>
-            <dl>
-            </dl>
-          </div>
-          <div class="col-sm-6">
-            <h3>Application Demo <small>(with <strong><a href="https://github.com/social-snippet/vim-social-snippet">social_snippet.vim</a></strong>)</small></h3>
-            <p class="text-center"><img src="img/ss-use.gif" class="demo-gif"></p>
-          </div>
-        </div>
+				<div class="row"><hr></div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>3. Applications and Web Services</h2>
+					</div>
+					<div class="col-sm-6">
+						<dl>
+							<dt><h3>The social-snippet core system</h3></dt>
+							<dd>
+								<p><a href="https://rubygems.org/gems/social_snippet">https://rubygems.org/gems/social_snippet</a></p>
+							</dd>
+							<dt><h3>The social-snippet registry system</h3></dt>
+							<dd>
+								<p><a href="https://sspm.herokuapp.com">https://sspm.herokuapp.com</a></p>
+							</dd>
+							<dt><h3>social_snippet.vim</h3></dt>
+							<dd>
+								<p><a href="https://github.com/social-snippet/vim-social-snippet">https://github.com/social-snippet/vim-social-snippet</a></p>
+							</dd>
+						</dl>
+						<dl>
+						</dl>
+					</div>
+					<div class="col-sm-6">
+						<h3>Application Demo <small>(with <strong><a href="https://github.com/social-snippet/vim-social-snippet">social_snippet.vim</a></strong>)</small></h3>
+						<p class="text-center"><img src="img/ss-use.gif" class="demo-gif"></p>
+					</div>
+				</div>
 			</div>
 		</section>
 
-    <div class="container"><hr></div>
+		<div class="container"><hr></div>
 
 		<footer>
 			<div class="container">
