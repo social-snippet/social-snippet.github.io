@@ -1,15 +1,14 @@
 body { font-family: 'Ubuntu', sans-serif; }
 body { background: #f9f2f4; }
 .navbar { margin-bottom: 0; }
-.navbar { background: rgba(0, 0, 31, 0.9); }
+.navbar { background: rgba(0, 0, 31, 0.8); }
 .navbar { color: rgba(255, 255, 255, 0.9); }
 .navbar { border-color: rgba(204, 204, 204, 0.2); }
-.jumbotron { background: rgba(0, 0, 31, 0.8); }
+.jumbotron { background: rgba(0, 0, 31, 0.7); }
 .jumbotron { color: rgba(255, 255, 255, 0.8); }
 .jumbotron { border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 .jumbotron h1 { color: rgba(255, 255, 255, 1); }
 .jumbotron .head { font-family: 'Source Sans Pro', sans-serif; }
-.jumbotron .head { text-shadow: rgba(0, 0, 0, 0.8) 2px 2px 3px; }
 .jumbotron .btn { border-radius: 0; }
 h2 { color: rgba(0, 61, 93, 1); }
 .shell { background: rgba(31, 31, 31, 1); }
