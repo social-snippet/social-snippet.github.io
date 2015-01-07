@@ -1,5 +1,6 @@
 body { font-family: 'Ubuntu', sans-serif; }
 body { background: #f9f2f4; }
+body { color: #666666 }
 .navbar { margin-bottom: 0; }
 .navbar { background: rgba(0, 0, 31, 0.8); }
 .navbar { color: rgba(255, 255, 255, 0.9); }
