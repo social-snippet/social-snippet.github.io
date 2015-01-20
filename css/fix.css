@@ -7,7 +7,7 @@ body { color: #666666 }
 .navbar { border-color: rgba(204, 204, 204, 0.2); }
 .jumbotron { background: rgba(0, 0, 31, 0.7); }
 .jumbotron { color: rgba(255, 255, 255, 0.8); }
-.jumbotron { border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+.jumbotron { border-bottom: 6px solid rgba(255, 255, 255, 0.5); }
 .jumbotron h1 { color: rgba(255, 255, 255, 1); }
 .jumbotron .head { font-family: 'Source Sans Pro', sans-serif; }
 .jumbotron .btn { border-radius: 0; }
